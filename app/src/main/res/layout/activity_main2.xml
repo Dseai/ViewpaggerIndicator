@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:hyman="http://schemas.android.com/apk/res/com.syn.viewpaggerindicator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.syn.viewpaggerindicator.MainActivity">
+    <com.syn.viewpagerindicator.ViewpagerIndicator
+        android:id="@+id/id_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        hyman:visible_tab_count="4"
+        android:background="@drawable/bg_title"
+        android:orientation="horizontal">
+    </com.syn.viewpagerindicator.ViewpagerIndicator>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpagger"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>
